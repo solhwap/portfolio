@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>portfolio</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+<div id="wrap">
+
+<div id="title">
+<a href="./index.html" style="text-decoration: none; color:#008080;">PORTFOLIO</a>
+</div>
+ 
+  <div id="menu">
+    <a id="home" onclick="clickHome();">앱개발</a>
+    <a id="python" onclick="clickPython();">Python</a>
+    <a id="java" onclick="clickJava();">Java</a>
+    <a id="cs" onclick="clickCS();">Arduino</a>
+    <a id="jsp" onclick="clickJSP();">JSP</a>
+    <a id="xml" onclick="clickXML();">XML</a>
+  </div>
+
+<img id="photo" src="images/smartPot2.png", width="90%", alt="portfolioImage1">
+
+<div id="contents">
+<img id="photo2" src="images/smartPot.png", width="30%", alt="portfolioImage2">
+<div id="smartPot">
+<h1 id=title1>스마트 화분</h1>
+<p id="p1">
+앱 인벤터로 제작 된 화분관리 앱(프로토타입)입니다. 계절학기의 짧은 수업 기간 동안 제작되어 기능 정의, UI 설계 및 구현 단계까지만 진행이 되었습니다. 오염 물질을 간이정수기를 이용하여 정수처리하고 정수처리 된 물은 비접촉 수위센서로 측정되어 앱으로 정수처리 진행 상황을 알 수 있습니다. 앱에서 '물주기' 버튼을 누르면 원격으로 화분에 물을 주는 것도 가능하고, '식물도감' 버튼을 누르면식물 키우는 것에 익숙치 않은 사용자를 위하여 식물 재배에 대한 정보도 제공합니다.<br/><br/>
+</p>
+<b id="b1">제작기간 : 2020년 12월 28일 ~ 2020년 1월 18일</b>
+<br/>
+</div>
+</div>
+
+
+<div id="contents">
+<img id="photo3" src="images/alarmApp.png", width="30%", alt="portfolioImage3">
+<div id="alarmApp">
+<h1 id=title2>동작인식 알람앱</h1>
+<p id="p2">
+안드로이드 스튜디오, OpenCV(Haar Cascades검출기 파일 사용)를 이용하여 제작하였습니다. 검출기가 사용자의 눈동작을 감지하여 눈을 감으면 알람음이 계속 재생되고, 일정 시간 동안 눈을 계속 뜨고 있으면 알람음이 더 이상 울리지 않는 방식의 알람 앱입니다. 사용자가 알람을 설정한 시각이 되면 알람이 크게 울리고, 알람 목록을 길게 누르면 사용자의 모션을 인식하는 화면으로 넘어갑니다. 알람 설정 화면은 안드로이드 스튜디오의 TimePickerDialog와 DatePickerDialog 대화상자 기능 등 활용하여 구성하였습니다.<br/><br/>
+</p>
+<b id="b2">제작기간 : 2021년 3월 2일 ~ 2021년 6월 16일</b>
+<br/>
+</div>
+</div>
+
+
+
+<div id="footer">
+<a href="#" style="text-decoration: none; color: #008080;">NAME : PARK SOL HWA</a><br/>
+<a href="#" style="text-decoration: none; color: #008080;">E-MAIL : freesprout201@naver.com</a>
+</div>
+
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous">
+</script>
+<script>
+    function clickHome() {
+      document.getElementById('photo').src = 'images/smartPot2.png';
+      document.getElementById('photo2').src = 'images/smartPot.png';
+      document.getElementById('photo3').src = 'images/alarmApp.png';
+      document.getElementById('home').style.fontWeight='bold';
+      document.getElementById('python').style.fontWeight='normal';
+      document.getElementById('java').style.fontWeight='normal';
+      document.getElementById('cs').style.fontWeight='normal';
+      document.getElementById('jsp').style.fontWeight='normal';
+      document.getElementById('xml').style.fontWeight='normal';
+
+      $(document).ready( function(){$( '#title1' ).text( '스마트 화분' );}  );
+      $(document).ready( function(){$( '#title2' ).text( '동작인식 알람앱' );}  );
+      $(document).ready( function(){$( '#p1' ).text("앱 인벤터로 제작 된 화분관리 앱(프로토타입)입니다. 계절학기의 짧은 수업 기간 동안 제작되어 기능 정의, UI 설계 및 구현 단계까지만 진행이 되었습니다. 오염 물질을 간이정수기를 이용하여 정수처리하고 정수처리 된 물은 비접촉 수위센서로 측정되어 앱으로 정수처리 진행 상황을 알 수 있습니다. 앱에서 '물주기' 버튼을 누르면 원격으로 화분에 물을 주는 것도 가능하고, '식물도감' 버튼을 누르면식물 키우는 것에 익숙치 않은 사용자를 위하여 식물 재배에 대한 정보도 제공합니다.");}  );
+      $(document).ready( function(){$( '#p2' ).text("안드로이드 스튜디오, OpenCV(Haar Cascades검출기 파일 사용)를 이용하여 제작하였습니다. 검출기가 사용자의 눈동작을 감지하여 눈을 감으면 알람음이 계속 재생되고, 일정 시간 동안 눈을 계속 뜨고 있으면 알람음이 더 이상 울리지 않는 방식의 알람 앱입니다. 사용자가 알람을 설정한 시각이 되면 알람이 크게 울리고, 알람 목록을 길게 누르면 사용자의 모션을 인식하는 화면으로 넘어갑니다. 알람 설정 화면은 안드로이드 스튜디오의 TimePickerDialog와 DatePickerDialog 대화상자 기능 등 활용하여 구성하였습니다.");}  );
+
+      $(document).ready( function(){$( '#b1' ).text( '제작기간 : 2020년 12월 28일 ~ 2020년 1월 18일' );}  );
+      $(document).ready( function(){$( '#b2' ).text( '제작기간 : 2021년 3월 2일 ~ 2021년 6월 16일' );}  );
+    }
+
+
+    function clickPython() {
+      document.getElementById('photo').src = 'images/python3.png';
+      document.getElementById('photo2').src = 'images/python1.png';
+      document.getElementById('photo3').src = 'images/blank.png';
+      document.getElementById('python').style.fontWeight='bold';
+      document.getElementById('home').style.fontWeight='normal';
+      document.getElementById('java').style.fontWeight='normal';
+      document.getElementById('cs').style.fontWeight='normal';
+      document.getElementById('jsp').style.fontWeight='normal';
+      document.getElementById('xml').style.fontWeight='normal';
+
+      $(document).ready( function(){$( '#title1' ).text( '타자연습 프로그램' );}  );
+      $(document).ready( function(){$( '#title2' ).text( '' );}  );
+      $(document).ready( function(){$( '#p1' ).text( '파이썬을 이용한 타자연습 프로그램 입니다.' );}  );
+      $(document).ready( function(){$( '#p2' ).text( '' );}  );
+
+      $(document).ready( function(){$( '#b1' ).text( '제작기간 : 2020년 3월 9일 ~ 2020년 6월 20일' );}  );
+      $(document).ready( function(){$( '#b2' ).text( '' );}  );
+    }
+
+
+    function clickJava() {
+      document.getElementById('photo').src = 'images/java1.png';
+      document.getElementById('photo2').src = 'images/java2.png';
+      document.getElementById('photo3').src = 'images/blank.png';
+      document.getElementById('java').style.fontWeight='bold';
+      document.getElementById('python').style.fontWeight='normal';
+      document.getElementById('home').style.fontWeight='normal';
+      document.getElementById('cs').style.fontWeight='normal';
+      document.getElementById('jsp').style.fontWeight='normal';
+      document.getElementById('xml').style.fontWeight='normal';
+
+      $(document).ready( function(){$( '#title1' ).text( '버스표 예매 프로그램' );}  );
+      $(document).ready( function(){$( '#title2' ).text( '' );}  );
+      $(document).ready( function(){$( '#p1' ).text( '자바를 이용한 버스표 예매 프로그램 입니다. 프로그램을 실행 시키게 되면, 제일 처음으로, 관리자모드로 로그인을 할지 터미널 조회창을 열지 선택하는 창이 뜨게 됩니다. 관리자 모드로 로그인을 하게되면, 고객의 예매 정보, 버스 정보를 확인하고 환불, 검색을 할 수 있습니다. 파일 처리를 통해 고객의 정보를 받아와 검색하고 환불이 가능하도록 구현했습니다. 터미널 조회버튼을 누르면 손님입장에서 프로그램이 실행됩니다.');}  );
+      $(document).ready( function(){$( '#p2' ).text( '' );}  );
+
+      $(document).ready( function(){$( '#b1' ).text( '제작기간 : 2019년 9월 2일 ~ 2019년 12월 8일' );}  );
+      $(document).ready( function(){$( '#b2' ).text( '' );}  );
+    }
+    
+    function clickCS() {
+      document.getElementById('photo').src = 'images/CS.png';
+      document.getElementById('photo2').src = 'images/CS2.png';
+      document.getElementById('photo3').src = 'images/blank.png';
+      document.getElementById('cs').style.fontWeight='bold';
+      document.getElementById('python').style.fontWeight='normal';
+      document.getElementById('java').style.fontWeight='normal';
+      document.getElementById('home').style.fontWeight='normal';
+      document.getElementById('jsp').style.fontWeight='normal';
+      document.getElementById('xml').style.fontWeight='normal';
+
+
+      $(document).ready( function(){$( '#title1' ).text( '블루투스를 이용한 아두이노 RC카 제어' );}  );
+      $(document).ready( function(){$( '#title2' ).text( '' );}  );
+      $(document).ready( function(){$( '#p1' ).text( '스마트 폰과 블루투스 통신을 이용한 음성 인식이 가능한 아두이노 RC 자동차를 구현해 보았습니다. 버튼이 아닌 조이스틱 형식을 사용함으로써 RC카의 부드러운 조작이 가능하고, 추가적으로 앱의 음성 인식 기능을 사용하여 음성을 인식하고 문자 데이터로 변환하여 RC카를 조종할 수 있도록 구현하였습니다. 안드로이드 스튜디오, freeRTOS와 독자라이브러리를 이용하고 구글의 STT기능을 사용하여 음성인식을 하도록 제작하였습니다.' );}  );
+      $(document).ready( function(){$( '#p2' ).text( '' );}  );
+
+      $(document).ready( function(){$( '#b1' ).text( '제작기간 : 2021년 5월 31일 ~ 2021년 6월 18일' );}  );
+      $(document).ready( function(){$( '#b2' ).text( '' );}  );
+    }
+
+function clickJSP() {
+      document.getElementById('photo').src = 'images/jsp1.png';
+      document.getElementById('photo2').src = 'images/jsp2.png';
+      document.getElementById('photo3').src = 'images/blank.png';
+      document.getElementById('jsp').style.fontWeight='bold';
+      document.getElementById('python').style.fontWeight='normal';
+      document.getElementById('java').style.fontWeight='normal';
+      document.getElementById('cs').style.fontWeight='normal';
+      document.getElementById('home').style.fontWeight='normal';
+      document.getElementById('xml').style.fontWeight='normal';
+
+
+      $(document).ready( function(){$( '#title1' ).text( '무인129' );}  );
+      $(document).ready( function(){$( '#title2' ).text( '' );}  );
+      $(document).ready( function(){$( '#p1' ).text('JSP를 이용하여 제작한 무인서점관리 프로그램 입니다. 아두이노 우노와 와이파이모듈을 활용하여 관리자가 원격으로 매장의 조명을 제어할 수 있도록 구현하였습니다.' );}  );
+      $(document).ready( function(){$( '#p2' ).text( '' );}  );
+
+      $(document).ready( function(){$( '#b1' ).text( '제작기간 : 2020년 9월 25일 ~ 2020년 12월 4일' );}  );
+      $(document).ready( function(){$( '#b2' ).text( '' );}  );
+    }
+
+function clickXML() {
+      document.getElementById('photo').src = 'images/banner.png';
+      document.getElementById('photo2').src = 'images/xml.PNG';
+      document.getElementById('photo3').src = 'images/blank.png';
+      document.getElementById('xml').style.fontWeight='bold';
+      document.getElementById('python').style.fontWeight='normal';
+      document.getElementById('java').style.fontWeight='normal';
+      document.getElementById('cs').style.fontWeight='normal';
+      document.getElementById('jsp').style.fontWeight='normal';
+      document.getElementById('home').style.fontWeight='normal';
+
+
+      $(document).ready( function(){$( '#title1' ).text( '웹브로슈어' );}  );
+      $(document).ready( function(){$( '#title2' ).text( '' );}  );
+      $(document).ready( function(){$( '#p1' ).text( 'XML, XSD, XSL을 활용하여 전시회를 소개하는 웹브로슈어를 제작해 보았습니다.' );}  );
+      $(document).ready( function(){$( '#p2' ).text( '' );}  );
+
+      $(document).ready( function(){$( '#b1' ).text( '제작기간 : 2019년 10월 26일 ~ 2019년 11월 14일' );}  );
+      $(document).ready( function(){$( '#b2' ).text( '' );}  );
+    }
+  </script>
+</body>
+</html>
