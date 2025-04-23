@@ -2,7 +2,7 @@ body{ background-color:#c2eac2; font-family:"맑은 고딕";}
 
 #title{
     text-align: center;
-    font-weight: normal;
+    font-weight: lighter;
     font-size: 80px;
     margin: 50px auto;
 }
